@@ -54,3 +54,15 @@
             image.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(image);
         });
+
+        // Agregar al final del body o en archivo JS separado
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navContainer = document.querySelector('.nav-container');
+    
+    if (menuToggle) {
+        menuToggle.addEventListener('click', function() {
+            navContainer.classList.toggle('active');
+        });
+    }
+});
